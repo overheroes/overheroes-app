@@ -7,5 +7,5 @@ Backend: https://github.com/hajuko/overwatch-heroes
  https://facebook.github.io/react-native/docs/getting-started.html#content)
 ```
 npm install
-react-native run-ios
+npm start
 ```
