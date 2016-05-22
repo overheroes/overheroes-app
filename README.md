@@ -9,6 +9,8 @@ Backend: https://github.com/hajuko/overwatch-heroes
 ```
 // For ios
 npm install
+npm install rnmp -g // ReactNativePackageManager
+rnpm link
 open ios/overwatchapp.xcodeproj
 npm start
 // CMD+R in XCode
