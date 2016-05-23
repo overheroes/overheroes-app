@@ -1,6 +1,8 @@
 
 ## overwatch heroes app
 
+[![Build Status](https://travis-ci.org/overheroes/overheroes-app.svg?branch=master)](https://travis-ci.org/overheroes/overheroes-app)
+
 Backend: https://github.com/overheroes/overheroes-api
 
 (react native installation:
