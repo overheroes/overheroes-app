@@ -1,7 +1,7 @@
 
 ## overwatch heroes app
 
-Backend: https://github.com/hajuko/overwatch-heroes
+Backend: https://github.com/overheroes/overheroes-api
 
 (react native installation:
  https://facebook.github.io/react-native/docs/getting-started.html#content)
