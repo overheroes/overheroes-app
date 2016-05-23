@@ -16,3 +16,5 @@ npm start
 // CMD+R in XCode
 ```
 (For Android: http://facebook.github.io/react-native/docs/getting-started.html)
+
+travis?
