@@ -11,6 +11,7 @@ import {
   ListView,
   StyleSheet,
   Text,
+  TouchableHighlight,
   View
 } from 'react-native';
 
@@ -47,7 +48,7 @@ class overwatchapp extends Component {
     return (
       <ListView
         dataSource={this.state.dataSource}
-        renderRow={this.renderHero}
+        renderRow={this.renderHero.bind(this)}
         style={styles.listView}
       />
     );
@@ -63,20 +64,27 @@ class overwatchapp extends Component {
     );
   }
 
-  renderHero(hero) {
+  renderHero(hero, sectionId, rowId) {
     return (
-      <View style={styles.container}>
-        <Image
-          source={{uri: `${ROOT_URL}/${hero.picture}`}}
-          style={styles.thumbnail}
-        />
-        <View style={styles.rightContainer}>
-          <Text style={styles.name}>{hero.name}</Text>
-          <Text style={styles.class}>{hero.class}</Text>
+      <TouchableHighlight onPress={() => this._pressRow(rowId, hero)}>
+        <View style={styles.container}>
+          <Image
+            source={{uri: `${ROOT_URL}/${hero.picture}`}}
+            style={styles.thumbnail}
+          />
+          <View style={styles.rightContainer}>
+            <Text style={styles.name}>{hero.name}</Text>
+            <Text style={styles.class}>{hero.class}</Text>
+          </View>
         </View>
-      </View>
+      </TouchableHighlight>
     );
   }
+
+  _pressRow(rowId, hero) {
+    console.log(`Pressed on ${rowId} with hero: `, hero);
+  }
+
 }
 
 const styles = StyleSheet.create({
