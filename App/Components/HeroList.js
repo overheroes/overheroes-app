@@ -7,6 +7,7 @@ import {
   TouchableHighlight,
   View
 } from 'react-native';
+import HeroDetails from './HeroDetails';
 
 const heroes = require('../../data/heroes.json');
 const ROOT_URL = 'https://overwatch-data.herokuapp.com/img/heroes';
@@ -76,6 +77,11 @@ class HeroList extends Component {
 
   _pressRow(rowId, hero) {
     console.log(`Pressed on ${rowId} with hero: `, hero);
+    this.props.navigator.push({
+      title: hero.name,
+      component: HeroDetails,
+      passProps: { hero }
+    });
   }
 
 }
