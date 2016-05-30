@@ -1,0 +1,1281 @@
+[
+    {
+        "name": "Genji",
+        "sourceUrl": "https://playoverwatch.com/de-de/heroes/genji/",
+        "picture": "genji/genji.png",
+        "class": "offense",
+        "hp": 200,
+        "armor": 0,
+        "difficulty": 3,
+        "abilities": [
+            {
+                "name": "Cyber Agility",
+                "type": "passive"
+            },
+            {
+                "name": "Shuriken",
+                "type": "damage",
+                "image": "genji/abilities/1.png",
+                "key": "LM",
+                "ammo": 24,
+                "damage": 28,
+                "rps": 3
+            },
+            {
+                "name": "Fan of Blades",
+                "type": "damage",
+                "image": "genji/abilities/1.png",
+                "key": "RM",
+                "ammo": 24,
+                "damage": 28,
+                "roundsPerSec": 6
+            },
+            {
+                "name": "Swift Strike",
+                "type": "damage",
+                "image": "genji/abilities/3.png",
+                "key": "SHIFT",
+                "cooldown": 8,
+                "damage": 50,
+                "range": 15
+            },
+            {
+                "name": "Deflect",
+                "type": "defensive",
+                "image": "genji/abilities/2.png",
+                "key": "E",
+                "duration": 2,
+                "cooldown": 8
+            },
+            {
+                "name": "Dragonblade",
+                "type": "ultimate",
+                "image": "genji/abilities/4.png",
+                "key": "Q",
+                "roundsPerSec": 1,
+                "casttime": 1,
+                "duration": 8,
+                "damage": 120,
+                "range": 5
+            }
+        ]
+    },
+    {
+        "name": "McCree",
+        "sourceUrl": "https://playoverwatch.com/de-de/heroes/mccree/",
+        "picture": "mccree/mccree.png",
+        "class": "offense",
+        "hp": 200,
+        "armor": 0,
+        "difficulty": 2,
+        "abilities": [
+            {
+                "name": "Peacekeeper",
+                "type": "damage",
+                "image": "mccree/abilities/1.png",
+                "key": "LM",
+                "ammo": 6,
+                "roundsPerSec": 2,
+                "cooldown": 1.5,
+                "damage": 35,
+                "damageMax": 70
+            },
+            {
+                "name": "Peacekeeper (Alt-Fire)",
+                "type": "damage",
+                "image": "mccree/abilities/1.png",
+                "key": "RM",
+                "ammo": 6,
+                "cooldown": 2,
+                "roundsPerSec": 6,
+                "damage": 35,
+                "damageMax": 70
+            },
+            {
+                "name": "Flashbang",
+                "type": "damage",
+                "image": "mccree/abilities/3.png",
+                "key": "E",
+                "damage": 25,
+                "range": 5,
+                "cooldown": 10
+            },
+            {
+                "name": "Combat Roll",
+                "type": "utility",
+                "image": "mccree/abilities/2.png",
+                "key": "SHIFT",
+                "cooldown": 8,
+                "range": 6
+            },
+            {
+                "name": "Deadeye",
+                "type": "ultimate",
+                "image": "mccree/abilities/4.png",
+                "key": "Q",
+                "duration": 6,
+                "damage": 170,
+                "damageMax": 850
+            }
+        ]
+    },
+    {
+        "name": "Pharah",
+        "sourceUrl": "https://playoverwatch.com/de-de/heroes/pharah/",
+        "picture": "pharah/pharah.png",
+        "class": "offense",
+        "hp": 200,
+        "armor": 0,
+        "difficulty": 1,
+        "abilities": [
+            {
+                "name": "Rocket Launcher",
+                "type": "damage",
+                "image": "pharah/abilities/1.png",
+                "key": "LM",
+                "ammo": 6,
+                "roundsPerSec": 1,
+                "cooldown": 1,
+                "damage": 120,
+                "radius": 3
+            },
+            {
+                "name": "Concussive Blast",
+                "type": "damage",
+                "image": "pharah/abilities/3.png",
+                "key": "E",
+                "cooldown": 12,
+                "damage": 120,
+                "radius": 8
+            },
+            {
+                "name": "Jump Jet",
+                "type": "utility",
+                "image": "pharah/abilities/2.png",
+                "key": "SHIFT",
+                "cooldown": 10
+            },
+            {
+                "name": "Hover Jets",
+                "type": "utility",
+                "key": "SPACE",
+                "duration": 2,
+                "cooldown": 2,
+                "isCanneld": true
+            },
+            {
+                "name": "Barrage",
+                "type": "ultimate",
+                "image": "pharah/abilities/4.png",
+                "key": "Q",
+                "roundsPerSec": 30,
+                "duration": 3,
+                "damage": 40,
+                "damageMax": 60,
+                "isCanneld": true
+            }
+        ]
+    },
+    {
+        "name": "Reaper",
+        "sourceUrl": "https://playoverwatch.com/de-de/heroes/reaper/",
+        "picture": "reaper/reaper.png",
+        "class": "offense",
+        "hp": 250,
+        "armor": 0,
+        "difficulty": 1,
+        "abilities": [
+            {
+                "name": "Hellfire Shotguns",
+                "type": "damage",
+                "image": "reaper/abilities/1.png",
+                "key": "LM",
+                "ammo": 8,
+                "roundsPerSec": 2,
+                "cooldown": 1.5,
+                "damage": 2,
+                "damageMax": 7,
+                "numberOfPellets": 20
+            },
+            {
+                "name": "Wraith Form",
+                "type": "utility",
+                "image": "reaper/abilities/2.png",
+                "key": "SHIFT",
+                "duration": 3,
+                "cooldown": 8,
+                "range": 22
+            },
+            {
+                "name": "Shadow Step",
+                "type": "utility",
+                "image": "reaper/abilities/3.png",
+                "key": "E",
+                "casttime": 2,
+                "cooldown": 10,
+                "range": 35
+            },
+            {
+                "name": "The Reaping",
+                "type": "passive",
+                "radius": 5,
+                "heal": 50
+            },
+            {
+                "name": "Death Blossom",
+                "type": "ultimate",
+                "image": "reaper/abilities/4.png",
+                "key": "Q",
+                "duration": 3,
+                "damage": 600,
+                "radius": 8
+            }
+        ]
+    },
+    {
+        "name": "Soldier 76",
+        "sourceUrl": "https://playoverwatch.com/de-de/heroes/soldier-76/",
+        "picture": "soldier76/soldier76.png",
+        "class": "offense",
+        "hp": 200,
+        "armor": 0,
+        "difficulty": 1,
+        "abilities": [
+            {
+                "name": "Heavy Pulse Rifle",
+                "type": "damage",
+                "image": "soldier76/abilities/1.png",
+                "key": "LM",
+                "ammo": 25,
+                "roundsPerSec": 10,
+                "cooldown": 1,
+                "damage": 5,
+                "damageMax": 17
+            },
+            {
+                "name": "Helix Rockets",
+                "type": "damage",
+                "image": "soldier76/abilities/2.png",
+                "key": "RM",
+                "cooldown": 8,
+                "damage": 120,
+                "radius": 2
+            },
+            {
+                "name": "Sprint",
+                "type": "utility",
+                "image": "soldier76/abilities/3.png",
+                "key": "SHIFT"
+            },
+            {
+                "name": "Biotic Field",
+                "type": "heal",
+                "image": "soldier76/abilities/4.png",
+                "key": "E",
+                "duration": 5,
+                "cooldown": 15,
+                "healPerSec": 40,
+                "radius": 5
+            },
+            {
+                "name": "Tactical Visor",
+                "type": "ultimate",
+                "image": "soldier76/abilities/5.png",
+                "key": "Q",
+                "duration": 6
+            }
+        ]
+    },
+    {
+        "name": "Tracer",
+        "sourceUrl": "https://playoverwatch.com/de-de/heroes/tracer/",
+        "picture": "tracer/tracer.png",
+        "class": "offense",
+        "hp": 150,
+        "armor": 0,
+        "difficulty": 2,
+        "abilities": [
+            {
+                "name": "Pulse Pistols",
+                "type": "damage",
+                "image": "tracer/abilities/1.png",
+                "key": "LM",
+                "ammo": 40,
+                "roundsPerSec": 40,
+                "cooldown": 1,
+                "damage": 1,
+                "damageMax": 6
+            },
+            {
+                "name": "Blink",
+                "type": "utility",
+                "image": "tracer/abilities/2.png",
+                "key": "SHIFT",
+                "cooldown": 3,
+                "range": 7
+            },
+            {
+                "name": "Recall",
+                "type": "utility",
+                "image": "tracer/abilities/3.png",
+                "key": "E",
+                "duration": 1.25,
+                "cooldown": 12
+            },
+            {
+                "name": "Pulse Bomb",
+                "type": "ultimate",
+                "image": "tracer/abilities/4.png",
+                "key": "Q",
+                "casttime": 1,
+                "damage": 400,
+                "radius": 3
+            }
+        ]
+    },
+    {
+        "name": "Bastion",
+        "sourceUrl": "https://playoverwatch.com/de-de/heroes/bastion/",
+        "picture": "bastion/bastion.png",
+        "class": "defense",
+        "hp": 300,
+        "armor": 100,
+        "difficulty": 1,
+        "abilities": [
+            {
+                "name": "Configuration: Recon",
+                "type": "damage",
+                "image": "bastion/abilities/1.png",
+                "key": "LM",
+                "ammo": 20,
+                "roundsPerSec": 8,
+                "cooldown": 2,
+                "damage": 6,
+                "damageMax": 20
+            },
+            {
+                "name": "Configuration: Sentry",
+                "type": "damage",
+                "image": "bastion/abilities/2.png",
+                "key": "LM",
+                "ammo": 200,
+                "roundsPerSec": 30,
+                "cooldown": 2.5,
+                "damage": 4,
+                "damageMax": 15
+            },
+            {
+                "name": "Reconfigure to Sentry",
+                "type": "utility",
+                "image": "bastion/abilities/3.png",
+                "key": "SHIFT",
+                "duration": 1
+            },
+            {
+                "name": "Reconfigure to Recon",
+                "type": "utility",
+                "image": "bastion/abilities/3.png",
+                "key": "SHIFT",
+                "duration": 0.5
+            },
+            {
+                "name": "Self-Repair",
+                "type": "heal",
+                "image": "bastion/abilities/4.png",
+                "key": "E",
+                "isChanneled": true,
+                "healPerSec": "25%"
+            },
+            {
+                "name": "Configuration: Tank",
+                "type": "ultimate",
+                "image": "bastion/abilities/5.png",
+                "key": "Q",
+                "casttime": 1,
+                "duration": 8,
+                "damage": 205,
+                "radius": 4
+            }
+        ]
+    },
+    {
+        "name": "Hanzo",
+        "sourceUrl": "https://playoverwatch.com/de-de/heroes/hanzo/",
+        "picture": "hanzo/hanzo.png",
+        "class": "defense",
+        "hp": 200,
+        "armor": 0,
+        "difficulty": 3,
+        "abilities": [
+            {
+                "name": "Storm Bow",
+                "type": "damage",
+                "image": "hanzo/abilities/1.png",
+                "key": "LM",
+                "roundsPerSec": 1,
+                "casttime": 0.5,
+                "damage": 29,
+                "damageMax": 125
+            },
+            {
+                "name": "Sonic Arrow",
+                "type": "damage",
+                "image": "hanzo/abilities/2.png",
+                "key": "SHIFT",
+                "casttime": 0.5,
+                "cooldown": 20,
+                "damage": 29,
+                "damageMax": 125,
+                "radius": 10
+            },
+            {
+                "name": "Scatter Arrow",
+                "type": "damage",
+                "image": "hanzo/abilities/3.png",
+                "key": "E",
+                "casttime": 0.5,
+                "cooldown": 10,
+                "damage": 75,
+                "numberOfPellets": 6
+            },
+            {
+                "name": "Wall Climb",
+                "type": "utility",
+                "key": "SPACE"
+            },
+            {
+                "name": "Dragonstrike",
+                "type": "ultimate",
+                "image": "hanzo/abilities/4.png",
+                "key": "Q",
+                "casttime": 1.5,
+                "dps": 200,
+                "radius": 4
+            }
+        ]
+    },
+    {
+        "name": "Junkrat",
+        "sourceUrl": "https://playoverwatch.com/de-de/heroes/junkrat/",
+        "picture": "junkrat/junkrat.png",
+        "class": "defense",
+        "hp": 200,
+        "armor": 0,
+        "difficulty": 2,
+        "abilities": [
+            {
+                "name": "Frag Launcher",
+                "type": "damage",
+                "image": "junkrat/abilities/1.png",
+                "key": "LM",
+                "ammo": 5,
+                "roundsPerSec": 1.66,
+                "cooldown": 1.5,
+                "damage": 80,
+                "damageMax": 120,
+                "radius": 2
+            },
+            {
+                "name": "Concussion Mine",
+                "type": "damage",
+                "image": "junkrat/abilities/2.png",
+                "key": "SHIFT",
+                "cooldown": 8,
+                "damage": 120,
+                "radius": 3
+            },
+            {
+                "name": "Steel Trap",
+                "type": "damage",
+                "image": "junkrat/abilities/3.png",
+                "key": "E",
+                "duration": 3,
+                "cooldown": 10,
+                "damage": 80,
+                "radius": 1
+            },
+            {
+                "name": "Total Mayhem",
+                "type": "passive",
+                "image": "junkrat/abilities/4.png",
+                "damage": 60,
+                "pellets": 5
+            },
+            {
+                "name": "Rip-Tire",
+                "type": "ultimate",
+                "image": "junkrat/abilities/5.png",
+                "key": "Q",
+                "casttime": 1,
+                "duration": 10,
+                "damage": 600,
+                "radius": 10
+            }
+        ]
+    },
+    {
+        "name": "Mei",
+        "sourceUrl": "https://playoverwatch.com/de-de/heroes/mei/",
+        "picture": "mei/mei.png",
+        "class": "defense",
+        "hp": 250,
+        "armor": 0,
+        "difficulty": 3,
+        "abilities": [
+            {
+                "name": "Endothermic Blaster",
+                "type": "damage",
+                "image": "mei/abilities/1.png",
+                "key": "LM",
+                "ammo": 200,
+                "roundsPerSec": 20,
+                "damage": 2.25,
+                "range": 10
+            },
+            {
+                "name": "Icicle",
+                "type": "damage",
+                "image": "mei/abilities/1.png",
+                "key": "RM",
+                "ammo": "25/200",
+                "roundsPerSec": 1.8,
+                "damage": 22,
+                "damageMax": 75
+            },
+            {
+                "name": "Cryo-Freeze",
+                "type": "heal",
+                "image": "mei/abilities/2.png",
+                "key": "SHIFT",
+                "duration": 4,
+                "cooldown": 12,
+                "healPerSec": 37.5
+            },
+            {
+                "name": "Ice Wall",
+                "type": "utility",
+                "image": "mei/abilities/3.png",
+                "key": "E",
+                "duration": 4.5,
+                "cooldown": 10,
+                "range": 35
+            },
+            {
+                "name": "Blizzard",
+                "type": "ultimate",
+                "image": "mei/abilities/4.png",
+                "key": "Q",
+                "casttime": 1.5,
+                "duration": 5,
+                "damage": 97,
+                "radius": 8
+            }
+        ]
+    },
+    {
+        "name": "Torbjörn",
+        "sourceUrl": "https://playoverwatch.com/de-de/heroes/torbjorn/",
+        "picture": "torbjorn/torbjorn.png",
+        "class": "defense",
+        "hp": 200,
+        "armor": "0^",
+        "difficulty": 2,
+        "abilities": [
+            {
+                "name": "Rivet Gun",
+                "type": "damage",
+                "image": "torbjorn/abilities/1.png",
+                "key": "LM",
+                "ammo": 18,
+                "roundsPerSec": 1.7,
+                "cooldown": 2,
+                "damage": 70
+            },
+            {
+                "name": "Rivet Gun (Alt-Fire)",
+                "type": "damage",
+                "image": "torbjorn/abilities/1.png",
+                "key": "RM",
+                "ammo": "3/18",
+                "roundsPerSec": 1.3,
+                "damage": 6,
+                "damageMax": 15,
+                "numberOfPellets": 10
+            },
+            {
+                "name": "Forge Hammer",
+                "type": "damage",
+                "image": "torbjorn/abilities/2.png",
+                "key": 2,
+                "roundsPerSec": 1,
+                "damage": 75
+            },
+            {
+                "name": "Armor Pack",
+                "type": "armor",
+                "image": "torbjorn/abilities/4.png",
+                "key": "E",
+                "armor": 75
+            },
+            {
+                "name": "Build Turret",
+                "type": "utility",
+                "image": "torbjorn/abilities/3.png",
+                "cooldown": 8
+            },
+            {
+                "name": "Molten Core",
+                "type": "ultimate",
+                "image": "torbjorn/abilities/5.png",
+                "key": "Q",
+                "duration": 12
+            },
+            {
+                "name": "Turret",
+                "type": "multilevel",
+                "image": "torbjorn/abilities/3.png",
+                "levels": [
+                    {
+                        "level": 1,
+                        "hp": 150,
+                        "dps": 28,
+                        "range": 40
+                    },
+                    {
+                        "level": 2,
+                        "hp": 300,
+                        "dps": 56,
+                        "range": 40
+                    },
+                    {
+                        "level": 3,
+                        "hp": 800,
+                        "range": 40,
+                        "dps": 126
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Widowmaker",
+        "sourceUrl": "https://playoverwatch.com/de-de/heroes/widowmaker/",
+        "picture": "widowmaker/widowmaker.png",
+        "class": "defense",
+        "hp": 200,
+        "armor": 0,
+        "difficulty": 2,
+        "abilities": [
+            {
+                "name": "Widow",
+                "s Kiss": "Assault'",
+                "type": "damage",
+                "image": "widowmaker/abilities/1.png",
+                "key": "LM",
+                "ammo": 30,
+                "roundsPerSec": 10,
+                "cooldown": 1.5,
+                "damage": 13
+            },
+            {
+                "name": "Widow",
+                "s Kiss": "Sniper'",
+                "type": "damage",
+                "image": "widowmaker/abilities/1.png",
+                "key": "RM",
+                "ammo": "3/30",
+                "roundsPerSec": 1,
+                "cooldown": 1.5,
+                "damage": 15,
+                "damageMax": 150
+            },
+            {
+                "name": "Venom Mine",
+                "type": "damage",
+                "image": "widowmaker/abilities/3.png",
+                "key": "E",
+                "duration": 5,
+                "cooldown": 15,
+                "damage": 75,
+                "radius": 3
+            },
+            {
+                "name": "Grappling Hook",
+                "type": "utility",
+                "image": "widowmaker/abilities/2.png",
+                "key": "SHIFT",
+                "cooldown": 12,
+                "range": 20
+            },
+            {
+                "name": "Infra-Sight",
+                "type": "ultimate",
+                "image": "widowmaker/abilities/4.png",
+                "key": "Q",
+                "duration": 15.5
+            }
+        ]
+    },
+    {
+        "name": "D. Va",
+        "sourceUrl": "https://playoverwatch.com/de-de/heroes/dva/",
+        "picture": "dva/dva.png",
+        "class": "tank",
+        "hp": 100,
+        "armor": 400,
+        "difficulty": 2,
+        "abilities": [
+            {
+                "name": "Pilot: Light Gun",
+                "type": "damage",
+                "image": "dva/abilities/2.png",
+                "key": "LM",
+                "ammo": 20,
+                "roundsPerSec": 6.66,
+                "damage": 14
+            },
+            {
+                "name": "Mech: Fusion Cannons",
+                "type": "damage",
+                "image": "dva/abilities/1.png",
+                "key": "LM",
+                "roundsPerSec": 7,
+                "damage": 0.5,
+                "damageMax": 3,
+                "numberOfPellets": 8
+            },
+            {
+                "name": "Mech: Boosters",
+                "type": "damage",
+                "image": "dva/abilities/3.png",
+                "key": "SHIFT",
+                "duration": 2,
+                "cooldown": 5,
+                "damage": 25,
+                "range": 25
+            },
+            {
+                "name": "Mech: Defense Matrix",
+                "type": "utility",
+                "image": "dva/abilities/4.png",
+                "key": "E",
+                "duration": 3,
+                "cooldown": 10
+            },
+            {
+                "name": "Pilot: Call Mech",
+                "type": "ultimate",
+                "image": "dva/abilities/6.png",
+                "key": "Q",
+                "casttime": 2,
+                "damage": 50
+            },
+            {
+                "name": "Mech: Self-Destruct",
+                "type": "ultimate",
+                "image": "dva/abilities/.png",
+                "key": "Q",
+                "casttime": 4,
+                "damage": 1000,
+                "radius": 20
+            }
+        ]
+    },
+    {
+        "name": "Reinhardt",
+        "sourceUrl": "https://playoverwatch.com/de-de/heroes/reinhardt/",
+        "picture": "reinhardt/reinhardt.png",
+        "class": "tank",
+        "hp": 300,
+        "armor": 200,
+        "difficulty": 2,
+        "abilities": [
+            {
+                "name": "Rocket Hammer",
+                "type": "damage",
+                "image": "reinhardt/abilities/1.png",
+                "key": "LM",
+                "roundsPerSec": 1,
+                "damage": 75,
+                "range": 5
+            },
+            {
+                "name": "Fire Strike",
+                "type": "damage",
+                "image": "reinhardt/abilities/4.png",
+                "key": "E",
+                "casttime": 0.25,
+                "cooldown": 6,
+                "damage": 100
+            },
+            {
+                "name": "Charge",
+                "type": "damage",
+                "image": "reinhardt/abilities/3.png",
+                "key": "SHIFT",
+                "duration": 3,
+                "cooldown": 10,
+                "damage": 350
+            },
+            {
+                "name": "Barrier Field",
+                "type": "shield",
+                "image": "reinhardt/abilities/2.png",
+                "cooldown": 5,
+                "shield": 2000
+            },
+            {
+                "name": "Earth Shatter",
+                "type": "ultimate",
+                "image": "reinhardt/abilities/5.png",
+                "key": "Q",
+                "casttime": 0.5,
+                "damage": 50,
+                "range": 20
+            }
+        ]
+    },
+    {
+        "name": "Roadhog",
+        "sourceUrl": "https://playoverwatch.com/de-de/heroes/roadhog/",
+        "picture": "roadhog/roadhog.png",
+        "class": "defense",
+        "hp": 600,
+        "armor": 0,
+        "difficulty": 2,
+        "abilities": [
+            {
+                "name": "Scrap Gun",
+                "type": "damage",
+                "image": "roadhog/abilities/1.png",
+                "key": "LM",
+                "ammo": 4,
+                "roundsPerSec": 1,
+                "cooldown": 1.5,
+                "damage": 4,
+                "damageMax": 9,
+                "numberOfPellets": 25
+            },
+            {
+                "name": "Scrap Gun (Alt-Fire)",
+                "type": "damage",
+                "image": "roadhog/abilities/1.png",
+                "ammo": 4,
+                "roundsPerSec": 1,
+                "cooldown": 1.5,
+                "damage": 4,
+                "damageMax": 9,
+                "numberOfPellets": 25
+            },
+            {
+                "name": "Chain Hook",
+                "type": "damage",
+                "image": "roadhog/abilities/3.png",
+                "key": "SHIFT",
+                "cooldown": 6,
+                "damage": 30,
+                "range": 22
+            },
+            {
+                "name": "Take a Breather",
+                "type": "heal",
+                "image": "roadhog/abilities/2.png",
+                "key": "E",
+                "duration": 1,
+                "cooldown": 8,
+                "healPerSec": 300
+            },
+            {
+                "name": "Whole Hog",
+                "type": "ultimate",
+                "image": "roadhog/abilities/4.png",
+                "key": "Q",
+                "duration": 6,
+                "damage": 2500
+            }
+        ]
+    },
+    {
+        "name": "Winston",
+        "sourceUrl": "https://playoverwatch.com/de-de/heroes/winston/",
+        "picture": "winston/winston.png",
+        "class": "defense",
+        "hp": 400,
+        "armor": 100,
+        "difficulty": 2,
+        "abilities": [
+            {
+                "name": "Tesla Cannon",
+                "type": "damage",
+                "image": "winston/abilities/1.png",
+                "key": "LM",
+                "ammo": 100,
+                "roundsPerSec": 20,
+                "damage": 2.7,
+                "range": 8
+            },
+            {
+                "name": "Jump Pack",
+                "type": "damage",
+                "image": "winston/abilities/2.png",
+                "key": "SHIFT",
+                "cooldown": 6,
+                "damage": 50,
+                "radius": 5
+            },
+            {
+                "name": "Barrier Projector",
+                "type": "shield",
+                "image": "winston/abilities/3.png",
+                "key": "E",
+                "cooldown": 13,
+                "duration": 5,
+                "shield": 600,
+                "radius": 5
+            },
+            {
+                "name": "Primal Rage",
+                "type": "ultimate",
+                "image": "winston/abilities/4.png",
+                "key": "Q",
+                "duration": 10,
+                "damage": 40,
+                "range": 4
+            }
+        ]
+    },
+    {
+        "name": "Zarya",
+        "sourceUrl": "https://playoverwatch.com/de-de/heroes/zarya/",
+        "picture": "zarya/zarya.png",
+        "class": "defense",
+        "hp": 200,
+        "armor": 0,
+        "shield": 200,
+        "difficulty": 3,
+        "abilities": [
+            {
+                "name": "Particle Cannon",
+                "type": "damage",
+                "image": "zarya/abilities/1.png",
+                "key": "LM",
+                "ammo": 100,
+                "roundsPerSec": 20,
+                "cooldown": 1.5,
+                "damage": 4,
+                "damageMax": 8,
+                "range": 15
+            },
+            {
+                "name": "Particle Cannon (Alt-Fire)",
+                "type": "damage",
+                "image": "zarya/abilities/1.png",
+                "key": "RM",
+                "ammo": "25/100",
+                "roundsPerSec": 1,
+                "damage": 46,
+                "damageMax": 92,
+                "radius": 2
+            },
+            {
+                "name": "Particle Barrier",
+                "type": "shield",
+                "image": "zarya/abilities/3.png",
+                "key": "SHIFT",
+                "duration": 2,
+                "cooldown": 10,
+                "shield": 200
+            },
+            {
+                "name": "Projected Barrier",
+                "type": "shield",
+                "image": "zarya/abilities/2.png",
+                "key": "E",
+                "duration": 2,
+                "cooldown": 8,
+                "shield": 200,
+                "range": 30
+            },
+            {
+                "name": "Energy",
+                "type": "passive"
+            },
+            {
+                "name": "Graviton Surge",
+                "type": "ultimate",
+                "image": "zarya/abilities/4.png",
+                "key": "Q",
+                "duration": 4,
+                "damage": 22,
+                "radius": 8
+            }
+        ]
+    },
+    {
+        "name": "Lúcio",
+        "sourceUrl": "https://playoverwatch.com/de-de/heroes/lucio/",
+        "picture": "lucio/lucio.png",
+        "class": "support",
+        "hp": 200,
+        "armor": 0,
+        "shield": 0,
+        "difficulty": 3,
+        "abilities": [
+            {
+                "name": "Sonic Amplifier",
+                "type": "damage",
+                "image": "lucio/abilities/1.png",
+                "key": "LM",
+                "ammo": 20,
+                "roundsPerSec": 4,
+                "cooldown": 1.25,
+                "damage": 16
+            },
+            {
+                "name": "Soundwave",
+                "type": "damage",
+                "image": "lucio/abilities/1.png",
+                "key": "RM",
+                "ammo": "4/20",
+                "cooldown": 4,
+                "damage": 25
+            },
+            {
+                "name": "Crossfade: Speed",
+                "type": "buff",
+                "image": "lucio/abilities/2.png",
+                "key": "SHIFT",
+                "range": 30,
+                "speed": "30%"
+            },
+            {
+                "name": "Crossfade: Heal",
+                "type": "heal",
+                "image": "lucio/abilities/2.png",
+                "key": "SHIFT",
+                "healPerSec": 12.5,
+                "range": 30
+            },
+            {
+                "name": "Amp It Up: Speed",
+                "type": "buff",
+                "image": "lucio/abilities/3.",
+                "key": "E",
+                "duration": 3,
+                "cooldown": 12,
+                "range": 30,
+                "speed": "110%"
+            },
+            {
+                "name": "Amp it Up: Heal",
+                "type": "heal",
+                "image": "lucio/abilities/3.png",
+                "key": "E",
+                "duration": 3,
+                "cooldown": 12,
+                "healPerSec": 40,
+                "range": 30
+            },
+            {
+                "name": "Sound Barrier",
+                "type": "ultimate",
+                "image": "lucio/abilities/4.png",
+                "key": "Q",
+                "duration": 6,
+                "shield": 500
+            }
+        ]
+    },
+    {
+        "name": "Mercy",
+        "sourceUrl": "https://playoverwatch.com/de-de/heroes/mercy/",
+        "picture": "mercy/mercy.png",
+        "class": "support",
+        "hp": 200,
+        "armor": 0,
+        "shield": 0,
+        "difficulty": 1,
+        "abilities": [
+            {
+                "name": "Caduceus Blaster",
+                "type": "damage",
+                "image": "mercy/abilities/2.png",
+                "key": 2,
+                "ammo": 20,
+                "roudsPerSec": 5,
+                "cooldown": 1,
+                "damage": 20
+            },
+            {
+                "name": "Caduceus Staff: Heal",
+                "type": "heal",
+                "image": "mercy/abilities/1.png",
+                "key": "LM",
+                "isChanneled": true,
+                "healPerSec": 50,
+                "range": 15
+            },
+            {
+                "name": "Caduceus Staff: Damage",
+                "type": "buff",
+                "image": "mercy/abilities/1.png",
+                "key": "RM",
+                "isChanneled": true,
+                "range": 15,
+                "damage": "30%"
+            },
+            {
+                "name": "Guardian Angel",
+                "type": "utility",
+                "image": "mercy/abilities/3.png",
+                "key": "SHIFT",
+                "cooldown": 2,
+                "range": 30
+            },
+            {
+                "name": "Angelic Descent: Glide",
+                "type": "utility",
+                "image": "mercy/abilities/4.png"
+            },
+            {
+                "name": "Angelic Descent: Self Heal",
+                "type": "passive",
+                "image": "mercy/abilities/4.png",
+                "healPerSec": 25
+            },
+            {
+                "name": "Resurrect",
+                "type": "ultimate",
+                "image": "mercy/abilities/5.png",
+                "key": "Q",
+                "casttime": 1,
+                "radius": 15
+            }
+        ]
+    },
+    {
+        "name": "Symmetra",
+        "sourceUrl": "https://playoverwatch.com/de-de/heroes/symmetra/",
+        "picture": "symmetra/symmetra.png",
+        "class": "support",
+        "hp": 100,
+        "armor": 0,
+        "shield": 100,
+        "difficulty": 2,
+        "abilities": [
+            {
+                "name": "Photon Projector",
+                "type": "damageVariable",
+                "image": "symmetra/abilities/1.png",
+                "key": "LM",
+                "ammo": 100,
+                "roundsPerSec": 8,
+                "cooldown": 1,
+                "damage": [
+                    3,
+                    7,
+                    15
+                ],
+                "range": 5
+            },
+            {
+                "name": "Photon Projector (Alt-Fire)",
+                "type": "heal",
+                "image": "symmetra/abilities/1.png",
+                "key": "RM",
+                "ammo": "20/100",
+                "casttime": "0 - 2",
+                "damage": 25,
+                "damageMax": 125
+            },
+            {
+                "name": "Sentry Turret: Build",
+                "type": "utility",
+                "image": "symmetra/abilities/2.png",
+                "key": "SHIFT",
+                "ammo": "3 (max. 6)",
+                "casttime": 1,
+                "cooldown": "1 per 10 sec"
+            },
+            {
+                "name": "Sentry Turret: Attack",
+                "type": "damage",
+                "image": "symmetra/abilities/2.png",
+                "range": 10,
+                "dps": 25
+            },
+            {
+                "name": "Photon Shield",
+                "type": "shield",
+                "image": "symmetra/abilities/3.png",
+                "key": "E",
+                "cooldown": 1,
+                "shield": 25,
+                "range": 20
+            },
+            {
+                "name": "Teleporter",
+                "type": "ultimate",
+                "image": "symmetra/abilities/4.png",
+                "key": "Q",
+                "casttime": 2
+            }
+        ]
+    },
+    {
+        "name": "Zenyatta",
+        "sourceUrl": "https://playoverwatch.com/de-de/heroes/zenyatta/",
+        "picture": "zenyatta/zenyatta.png",
+        "class": "support",
+        "hp": 50,
+        "armor": 0,
+        "shield": 100,
+        "difficulty": 3,
+        "abilities": [
+            {
+                "name": "Orb of Destruction",
+                "type": "damage",
+                "image": "zenyatta/abilities/1.png",
+                "key": "LM",
+                "ammo": 20,
+                "roundsPerSec": 3,
+                "cooldown": 2,
+                "damange": 45
+            },
+            {
+                "name": "Orb of Destuction (Alt-Fire)",
+                "type": "damage",
+                "image": "zenyatta/abilities/1.png",
+                "key": "RM",
+                "ammo": "5/20",
+                "casstime": "0 - 2.5",
+                "damage": 35,
+                "pellets": 5
+            },
+            {
+                "name": "Orb of Harmony",
+                "type": "heal",
+                "image": "zenyatta/abilities/2.png",
+                "key": "SHIFT",
+                "healPerSec": 30,
+                "range": 40
+            },
+            {
+                "name": "Orb of Discord",
+                "type": "debuff",
+                "image": "zenyatta/abilities/3.png",
+                "key": "E",
+                "range": 40
+            },
+            {
+                "name": "Trancendence",
+                "type": "ultimate",
+                "image": "zenyatta/abilities/4.png",
+                "key": "Q",
+                "duration": 6,
+                "healPerSec": 130,
+                "radius": 10
+            }
+        ]
+    }
+]
