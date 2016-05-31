@@ -10,12 +10,10 @@ Backend: https://github.com/overheroes/overheroes-api
  https://facebook.github.io/react-native/docs/getting-started.html#content)
 
 ```
+(react native must be installed: npm install -g react-native)
 // For ios
 npm install
-npm install rnmp -g // ReactNativePackageManager
-rnpm link
 open ios/overwatchapp.xcodeproj
-npm start
 // CMD+R in XCode
 ```
 (For Android: http://facebook.github.io/react-native/docs/getting-started.html)
