@@ -43,6 +43,8 @@ class HeroList extends Component {
       <ListView
         dataSource={this.state.dataSource}
         renderRow={this.renderHero.bind(this)}
+        renderSeparator={(sectionID, rowID) =>
+          <View key={`${sectionID}-${rowID}`} style={styles.separator} />}
         style={styles.listView}
       />
     );
@@ -92,7 +94,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#F5FCFF',
+    backgroundColor: '#FFFFFF',
   },
   rightContainer: {
     flex: 1,
@@ -105,13 +107,16 @@ const styles = StyleSheet.create({
   class: {
     textAlign: 'center',
   },
+  separator: {
+    height: 1,
+    backgroundColor: '#DDDDDD',
+  },
   thumbnail: {
     width: 53,
     height: 81,
   },
   listView: {
-    paddingTop: 20,
-    backgroundColor: '#F5FCFF',
+    backgroundColor: '#FFFFFF',
   },
 });
 
