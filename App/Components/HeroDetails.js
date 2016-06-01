@@ -60,7 +60,8 @@ const styles = StyleSheet.create({
   },
   block: {
     margin: 20,
-    marginBottom: 2,
+    marginBottom: 5,
+    marginTop: 15,
     paddingBottom: 10,
     backgroundColor: '#FFF',
     borderRadius: 5,
