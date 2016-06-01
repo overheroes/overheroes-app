@@ -30,21 +30,23 @@ class HeroDetails extends Component {
 
     return (
       <ScrollView style={styles.container}>
-        <Image
-          source={{uri: `${ROOT_URL}/${hero.picture}`}}
-          style={styles.image}
-        />
-        <View style={styles.heading}>
-            <Text style={styles.name}>{hero.class}</Text>
-            <Text style={styles.title}>difficulty: {hero.difficulty}</Text>
-            <View style={styles.separator}/>
+        <View style={styles.block}>
+          <Image
+            source={{uri: `${ROOT_URL}/${hero.picture}`}}
+            style={styles.image}
+          />
+          <View style={styles.heading}>
+              <View style={styles.title}>
+                <Text style={styles.name}>{hero.name}</Text>
+              </View>
+          </View>
+          <View style={styles.details}>
+            <Text style={styles.desc}>HP: {hero.hp}</Text>
+            <Text style={styles.desc}>Armor: {hero.armor}</Text>
+            <Text style={styles.desc}>Difficulty: {hero.difficulty}</Text>
+          </View>
+          {abilities}
         </View>
-        <View>
-          <Text style={styles.desc}>HP: {hero.hp}</Text>
-          <Text style={styles.desc}>Armor: {hero.armor}</Text>
-          <Text style={styles.desc}>Difficulty: {hero.difficulty}</Text>
-        </View>
-        {abilities}
       </ScrollView>
     )
   }
@@ -52,6 +54,11 @@ class HeroDetails extends Component {
 
 const styles = StyleSheet.create({
   container: {
+    backgroundColor: '#F0F0F0'
+  },
+  block: {
+    margin: 20,
+    backgroundColor: '#FFF'
   },
   ability: {
     height: 40,
@@ -67,6 +74,7 @@ const styles = StyleSheet.create({
     alignItems: 'center'
   },
   thumbnail: {
+    borderRadius: 5,
     width: 53,
     //height: 81,
     borderWidth: 2,
@@ -74,26 +82,37 @@ const styles = StyleSheet.create({
     backgroundColor: 'black',
   },
   heading: {
-    backgroundColor: '#F8F8F8'
+    position: 'relative',
+    height: 25,
+    //backgroundColor: '#CCD1D7'
+  },
+  title: {
+    position: 'absolute',
+    marginTop: -30,
+    marginLeft: 10
+  },
+  name: {
+    color: '#fff',
+    backgroundColor: '#35415c',
+    fontSize: 30,
+    fontWeight: '700',
+    fontStyle: 'italic',
+    paddingTop: 5,
+    paddingRight: 10,
+    paddingLeft: 10,
+    paddingBottom: 5,
+    borderRadius: 2
   },
   separator: {
     height: 1,
     backgroundColor: '#DDDDDD'
   },
+  details: {
+    padding: 20,
+  },
   image: {
-    alignSelf: 'stretch',
-    height: 250
-  },
-  name: {
-    fontSize: 25,
-    fontWeight: 'bold',
-    margin: 5,
-    color: '#DF34FF'
-  },
-  title: {
-    fontSize: 20,
-    margin: 5,
-    color: '#656565'
+    resizeMode: 'cover',
+    height: 200
   },
   class: {
     textAlign: 'center',
