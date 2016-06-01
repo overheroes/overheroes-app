@@ -30,11 +30,11 @@ class HeroDetails extends Component {
 
     return (
       <ScrollView style={styles.container}>
+        <Image
+          source={{uri: `${ROOT_URL}/${hero.picture}`}}
+          style={styles.image}
+        />
         <View style={styles.block}>
-          <Image
-            source={{uri: `${ROOT_URL}/${hero.picture}`}}
-            style={styles.image}
-          />
           <View style={styles.heading}>
               <View style={styles.title}>
                 <Text style={styles.name}>{hero.name}</Text>
@@ -45,6 +45,8 @@ class HeroDetails extends Component {
             <Text style={styles.desc}>Armor: {hero.armor}</Text>
             <Text style={styles.desc}>Difficulty: {hero.difficulty}</Text>
           </View>
+        </View>
+        <View style={styles.block}>
           {abilities}
         </View>
       </ScrollView>
@@ -58,11 +60,22 @@ const styles = StyleSheet.create({
   },
   block: {
     margin: 20,
-    backgroundColor: '#FFF'
+    marginBottom: 2,
+    paddingBottom: 10,
+    backgroundColor: '#FFF',
+    borderRadius: 5,
+    shadowColor: '#000000',
+    shadowOpacity: 0.2,
+    shadowRadius: 3,
+    shadowOffset: {
+      height: 1,
+      width: 0
+    }
   },
   ability: {
     height: 40,
     margin: 5,
+    padding: 5,
     flex: 1,
     flexDirection: 'row',
     // justifyContent: 'center',
@@ -83,13 +96,13 @@ const styles = StyleSheet.create({
   },
   heading: {
     position: 'relative',
-    height: 25,
+    height: 15,
     //backgroundColor: '#CCD1D7'
   },
   title: {
     position: 'absolute',
-    marginTop: -30,
-    marginLeft: 10
+    marginTop: -40,
+    marginLeft: 20
   },
   name: {
     color: '#fff',
@@ -98,8 +111,8 @@ const styles = StyleSheet.create({
     fontWeight: '700',
     fontStyle: 'italic',
     paddingTop: 5,
-    paddingRight: 10,
-    paddingLeft: 10,
+    paddingRight: 20,
+    paddingLeft: 20,
     paddingBottom: 5,
     borderRadius: 2
   },
@@ -112,7 +125,8 @@ const styles = StyleSheet.create({
   },
   image: {
     resizeMode: 'cover',
-    height: 200
+    height: 160,
+    backgroundColor: 'white'
   },
   class: {
     textAlign: 'center',
