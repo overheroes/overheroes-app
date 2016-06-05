@@ -11,7 +11,7 @@ const NavigationStyle = StyleSheet.create({
   },
   navTitle: {
     color: Colors.snow,
-    fontSize: Fonts.size.regular,
+    fontSize: Fonts.size.h4, // Fonts.size.regular,
     fontFamily: Fonts.bold,
     justifyContent: 'center',
     alignSelf: 'center'

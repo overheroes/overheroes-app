@@ -9,7 +9,7 @@ import DebugSettings from './Config/DebugSettings'
 import './Config/PushConfig'
 
 // Styles
-import styles from './Containers/Styles/RootStyle'
+import styles, { DrawerStyle } from './Containers/Styles/RootStyle'
 
 const store = configureStore()
 
@@ -26,9 +26,9 @@ export default class RNBase extends React.Component {
 
   renderDrawerContent () {
     return (
-      <View style={{marginTop: 30, padding: 10}}>
-        <Text>
-          Drawer Content Goes Here!
+      <View style={{padding: 23, backgroundColor: '#3b5998'}}>
+        <Text style={{color: 'white'}}>
+          Overheroes
         </Text>
       </View>
     )
@@ -46,14 +46,15 @@ export default class RNBase extends React.Component {
           <Drawer
             ref={(ref) => { this.drawer = ref }}
             content={this.renderDrawerContent()}
-            style={styles.drawer}
+            styles={DrawerStyle}
             openDrawerOffset={100}
+            tweenHandler={Drawer.tweenPresets.parallax}
             type='static'
             tapToClose
           >
             <Navigator
               ref={(ref) => { this.navigator = ref }}
-              initialRoute={Routes.PresentationScreen}
+              initialRoute={Routes.HeroesListScreen}
               configureScene={Router.configureScene}
               renderScene={Router.renderScene}
               navigationBar={NavigationBar.render()}

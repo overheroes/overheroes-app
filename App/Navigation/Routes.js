@@ -12,6 +12,14 @@ export default new class Routes {
   // they're lazily evaluated to prevent recursion
   // when the screens themselves use this Routes file.
 
+  get HeroesListScreen () {
+    return {
+      title: 'Heroes',
+      component: require('../Containers/HeroesListScreen').default,
+      leftButton: 'HAMBURGER'
+    }
+  }
+
   get DeviceInfoScreen () {
     return {
       title: 'Device Info',

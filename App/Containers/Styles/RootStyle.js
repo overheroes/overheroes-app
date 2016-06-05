@@ -13,7 +13,7 @@ const RootStyle = StyleSheet.create({
   drawer: {
     shadowColor: '#000000',
     shadowOpacity: 0.8,
-    shadowRadius: 3
+    shadowRadius: 5
   },
   welcome: {
     fontSize: 20,
@@ -27,5 +27,16 @@ const RootStyle = StyleSheet.create({
     alignSelf: 'center'
   }
 })
+
+export const DrawerStyle = {
+  main: {
+    shadowColor: '#000000',
+    shadowOpacity: 0.3,
+    shadowRadius: 15
+  },
+  drawer: {
+    backgroundColor: Colors.slack
+  }
+}
 
 export default RootStyle
