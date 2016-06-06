@@ -20,6 +20,16 @@ export default new class Routes {
     }
   }
 
+  computeHeroDetailsScreen (hero) {
+    return {
+      title: hero.name,
+      passProps: { hero },
+      component: require('../Containers/HeroDetailsScreen').default,
+      leftButton: 'BACK',
+      customConfiguration: Transitions.back
+    }
+  }
+
   get DeviceInfoScreen () {
     return {
       title: 'Device Info',

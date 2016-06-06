@@ -25,6 +25,7 @@ export default class RNBase extends React.Component {
   }
 
   renderDrawerContent () {
+    // TODO extract and style the drawer
     return (
       <View style={{padding: 23, backgroundColor: '#3b5998'}}>
         <Text style={{color: 'white'}}>
