@@ -33,8 +33,11 @@ export default class HeroesListScreen extends React.Component {
   }
 
   fetchData () {
+    const sorted = heroes.sort((a, b) => {
+      return a.name < b.name ? -1 : (b.name < a.name) ? 1 : 0
+    })
     this.setState({
-      dataSource: this.state.dataSource.cloneWithRows(heroes),
+      dataSource: this.state.dataSource.cloneWithRows(sorted),
       loaded: true
     })
   }
