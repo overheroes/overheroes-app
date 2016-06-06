@@ -1,7 +1,6 @@
 import React, { PropTypes } from 'react'
 import { Image, ListView, ScrollView, Text, TouchableHighlight, View } from 'react-native'
 import { connect } from 'react-redux'
-import Actions from '../Actions/Creators'
 import Routes from '../Navigation/Routes'
 
 // Styles
@@ -63,7 +62,6 @@ export default class HeroesListScreen extends React.Component {
       </ScrollView>
     )
   }
-
 
   renderHero (hero, sectionId, rowId) {
     return (

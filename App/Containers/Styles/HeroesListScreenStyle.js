@@ -1,11 +1,11 @@
 import { StyleSheet } from 'react-native'
-import { Colors, Metrics, Base } from '../../Themes/'
+import { Metrics } from '../../Themes/'
 
 export default StyleSheet.create({
   container: {
     flex: 1,
     marginTop: Metrics.navBarHeight,
-    backgroundColor: 'white' //Colors.background
+    backgroundColor: 'white' // Colors.background
   },
   row: {
     flex: 1,
