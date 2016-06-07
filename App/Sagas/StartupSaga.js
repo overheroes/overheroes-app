@@ -1,4 +1,4 @@
-import { take, put, select } from 'redux-saga/effects'
+import { take, put } from 'redux-saga/effects'
 import Types from '../Actions/Types'
 import Actions from '../Actions/Creators'
 
