@@ -3,7 +3,7 @@ import apisauce from 'apisauce'
 import Reactotron from 'reactotron'
 
 // our "constructor"
-const create = (baseURL = 'http://openweathermap.org/data/2.1') => {
+const create = (baseURL = 'https://overwatch-data.herokuapp.com') => {
   // ------
   // STEP 1
   // ------
@@ -47,6 +47,8 @@ const create = (baseURL = 'http://openweathermap.org/data/2.1') => {
   //
   const getCity = (city) => api.get('/find/name', {q: city})
 
+  const getHeroes = () => api.get('/data/heroes.json')
+
   // ------
   // STEP 3
   // ------
@@ -62,6 +64,7 @@ const create = (baseURL = 'http://openweathermap.org/data/2.1') => {
   return {
     // a list of the API functions from step 2
     getCity,
+    getHeroes,
     // additional utilities
     addMonitor
   }

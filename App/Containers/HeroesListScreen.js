@@ -7,7 +7,6 @@ import Routes from '../Navigation/Routes'
 import styles from './Styles/HeroesListScreenStyle'
 
 const ROOT_URL = 'https://overwatch-data.herokuapp.com/img/heroes'
-const heroes = require('../Fixtures/data.json')
 
 export default class HeroesListScreen extends React.Component {
 
@@ -16,8 +15,7 @@ export default class HeroesListScreen extends React.Component {
     this.state = {
       dataSource: new ListView.DataSource({
         rowHasChanged: (row1, row2) => row1 !== row2
-      }),
-      loaded: false
+      })
     }
   }
 
@@ -29,28 +27,21 @@ export default class HeroesListScreen extends React.Component {
     this.props.navigator.state.tapHamburger = () => {
       this.props.navigator.drawer.toggle()
     }
-    this.fetchData()
   }
 
-  fetchData () {
-    const sorted = heroes.sort((a, b) => {
-      return a.name < b.name ? -1 : (b.name < a.name) ? 1 : 0
-    })
-    this.setState({
-      dataSource: this.state.dataSource.cloneWithRows(sorted),
-      loaded: true
-    })
+  shouldComponentUpdate (nextProps) {
+    return nextProps.heroes !== this.props.heroes
   }
 
   render () {
-    if (!this.state.loaded) {
+    if (!this.props.heroes) {
       return this.renderLoadingView()
     }
 
     return (
       // TODO map in scroll view?
       <ListView style={styles.container}
-        dataSource={this.state.dataSource}
+        dataSource={this.state.dataSource.cloneWithRows(this.props.heroes)}
         renderRow={this.renderHero.bind(this)}
       />
     )
@@ -92,6 +83,7 @@ export default class HeroesListScreen extends React.Component {
 
 const mapStateToProps = (state) => {
   return {
+    heroes: state.heroes.data
   }
 }
 

@@ -3,7 +3,7 @@ import API from '../Services/Api'
 import FixtureAPI from '../Services/FixtureApi'
 import { watchStartup } from './StartupSaga'
 import { watchLoginAttempt } from './LoginSaga'
-import getCityWeather from './GetCityWeatherSaga'
+import getHeroesSaga from './GetHeroesSaga'
 import DebugSettings from '../Config/DebugSettings'
 
 // Create our API at this level and feed it into
@@ -16,5 +16,6 @@ const api = DebugSettings.useFixtures ? FixtureAPI : API.create()
 export default function * root () {
   yield fork(watchStartup)
   yield fork(watchLoginAttempt)
-  yield fork(getCityWeather(api).watcher)
+  // yield fork(getCityWeather(api).watcher),
+  yield fork(getHeroesSaga(api).watcher)
 }
